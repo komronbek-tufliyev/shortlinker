@@ -59,3 +59,7 @@ def redirect_url_view(request, shortened_part):
         return render(request, template, context)
     except UrlShortener.DoesNotExist:
         raise Http404('Sorry, this link is broken :(')
+    
+def about_view(request):
+    template = 'about.html'
+    return render(request, template) 
