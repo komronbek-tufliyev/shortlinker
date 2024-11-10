@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-
+{% load static %}
 {% block title %} About Us - ShortLinker {% endblock%} 
 
 {% block content %}
@@ -20,7 +20,7 @@
             <!-- Left Column: Image -->
             <div class="flex items-center justify-center">
                 <img
-                src="https://via.placeholder.com/400"
+                src="{% static 'images/logo2.png' %}"
                 alt="ShortLinker"
                 class="rounded-lg shadow-lg w-full h-auto"
                 />
@@ -42,8 +42,7 @@
                 <li>Access analytics and visualizations</li>
                 <li>Simple, user-friendly interface</li>
                 </ul>
-                <a
-                href="/contact"
+                <a href="https://t.me/django_bro_uz/" target="_blank"
                 class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
                 >
                 Contact Us
@@ -60,18 +59,18 @@
                 We are a team of passionate developers and designers dedicated to
                 creating seamless link management tools.
             </p>
-            <div class="grid gap-8 md:grid-cols-3">
+            <div class="grid gap-8 md:grid-cols-2">
                 <!-- Team Member 1 -->
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md">
                 <img
-                    src="https://via.placeholder.com/150"
+                    src="{% static 'images/logo2.png' %}"
                     alt="Team Member"
                     class="w-24 h-24 rounded-full mx-auto mb-4"
                 />
-                <h3 class="text-lg font-semibold text-gray-800">Alice Doe</h3>
+                <h3 class="text-lg font-semibold text-gray-800">Komronbek Tufliyev</h3>
                 <p class="text-blue-600 mb-4">Lead Developer</p>
                 <p class="text-gray-600">
-                    Alice is responsible for the backend and API development at
+                    Komronbek is responsible for the backend and API development at
                     ShortLinker.
                 </p>
                 </div>
@@ -79,30 +78,15 @@
                 <!-- Team Member 2 -->
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md">
                 <img
-                    src="https://via.placeholder.com/150"
+                    src="{% static 'images/logo2.png' %}"
                     alt="Team Member"
                     class="w-24 h-24 rounded-full mx-auto mb-4"
                 />
-                <h3 class="text-lg font-semibold text-gray-800">Bob Smith</h3>
+                <h3 class="text-lg font-semibold text-gray-800">Bobur Siddiqov</h3>
                 <p class="text-blue-600 mb-4">UI/UX Designer</p>
                 <p class="text-gray-600">
-                    Bob crafts the user experience and interface design for a smooth
+                    Bobur crafts the user experience and interface design for a smooth
                     user journey.
-                </p>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img
-                    src="https://via.placeholder.com/150"
-                    alt="Team Member"
-                    class="w-24 h-24 rounded-full mx-auto mb-4"
-                />
-                <h3 class="text-lg font-semibold text-gray-800">Carol Lee</h3>
-                <p class="text-blue-600 mb-4">Data Analyst</p>
-                <p class="text-gray-600">
-                    Carol is responsible for data tracking and analytics, helping users
-                    understand their URL performance.
                 </p>
                 </div>
             </div>
